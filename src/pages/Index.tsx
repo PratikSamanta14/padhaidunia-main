@@ -134,7 +134,7 @@ const Index = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About Us</a>
             <a href="#courses" className="text-foreground hover:text-primary transition-colors">Courses</a>
             <a href="#team" className="text-foreground hover:text-primary transition-colors">Team</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact Us</a>
+            <a href="/contact" className="text-foreground hover:text-primary transition-colors">Contact Us</a>
           </div>
           
           <div className="flex items-center gap-4">
@@ -469,7 +469,7 @@ const Index = () => {
                 <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
             
