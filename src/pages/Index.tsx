@@ -21,6 +21,7 @@ import courseAI from '@/assets/course-ai.jpg';
 import courseWeb from '@/assets/course-web.jpg';
 import courseData from '@/assets/course-data.jpg';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Index = () => {
   const [statsRef, statsInView] = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -133,7 +134,7 @@ const Index = () => {
             <a href="#" className="text-foreground hover:text-primary transition-colors">Home</a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About Us</a>
             <a href="#courses" className="text-foreground hover:text-primary transition-colors">Courses</a>
-            <a href="#team" className="text-foreground hover:text-primary transition-colors">Team</a>
+            <Link href="/teams" className="text-foreground hover:text-primary transition-colors">Team</Link>
             <a href="/contact" className="text-foreground hover:text-primary transition-colors">Contact Us</a>
           </div>
           
