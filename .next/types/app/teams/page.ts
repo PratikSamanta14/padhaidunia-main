@@ -1,4 +1,4 @@
-// File: D:\padhaiMain\padhaidunia-main\app\teams\page.tsx
+// File: C:\Users\soumi\OneDrive\Desktop\pd\padhaidunia-main\app\teams\page.tsx
 import * as entry from '../../../../app/teams/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

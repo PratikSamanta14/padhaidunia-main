@@ -24,7 +24,7 @@ const Contact = () => {
 
           <div className="hidden md:flex items-center gap-8">
             <a href="/" className="text-foreground hover:text-primary transition-colors">Home</a>
-            <a href="/#about" className="text-foreground hover:text-primary transition-colors">About Us</a>
+            <a href="/AboutUs" className="text-foreground hover:text-primary transition-colors">About Us</a>
             <a href="/#courses" className="text-foreground hover:text-primary transition-colors">Courses</a>
             <a href="/#team" className="text-foreground hover:text-primary transition-colors">Team</a>
             <a href="/contact" className="text-primary font-medium transition-colors">Contact Us</a>
