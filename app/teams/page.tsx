@@ -7,13 +7,9 @@ import AuthNavButtons from "../../src/components/ui/AuthNavButtons";
 import ExploreTeamSection from "../../src/components/ui/ExploreTeamSection";
 import { TeamMember } from "../../src/components/ui/TeamCard";
 import Image from "next/image";
+import FloatingParticles from "../../src/components/FloatingParticles";
 
-// Added styles for dark background matching the homepage image
-const pageStyle = {
-  backgroundColor: "#0a0e17", // Dark navy/black background color from the image
-  minHeight: "100vh",
-  color: "white"
-};
+// Removed static background style as we're using FloatingParticles
 
 export default function Teams() {
   const [isOpen, setIsOpen] = useState(false);
@@ -148,7 +144,10 @@ export default function Teams() {
   ].filter(section => section.members.length > 0);
 
   return (
-    <main className="min-h-screen relative overflow-hidden" style={pageStyle}>
+    <main className="min-h-screen relative text-gray-800 overflow-x-hidden">
+      {/* Landing page animated background */}
+      <FloatingParticles />
+      
       {/* Navbar */}
       <header className="sticky top-0 bg-gray-800/80 backdrop-blur-lg shadow-md z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
@@ -245,27 +244,34 @@ export default function Teams() {
       </section>
 
       {/* Carousel Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12 relative z-10">
-        <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-          Meet Our Team Members
-        </h2>
-        <div className="perspective-[1200px]" style={{ transformStyle: 'preserve-3d' }}>
-          <div className="relative">
-            {/* 3D Background Elements */}
-            <div className="absolute top-20 left-20 w-40 h-40 rounded-full bg-blue-500/5 blur-xl"
-              style={{
-                transform: 'translateZ(-100px)',
-                animation: 'float 15s ease-in-out infinite',
-              }}
-            ></div>
-            <div className="absolute bottom-40 right-10 w-60 h-60 rounded-full bg-purple-500/5 blur-xl"
-              style={{
-                transform: 'translateZ(-150px)',
-                animation: 'float 20s ease-in-out infinite reverse',
-              }}
-            ></div>
-            <div className="flex justify-center">
-              <TeamCarousel members={members} />
+      <section className="w-full pt-4 pb-8 relative z-10">
+        <div className="container mx-auto px-4">
+          <div className="relative text-center">
+            <div className="absolute -inset-6 bg-blue-500/10 blur-2xl rounded-3xl"></div>
+            <div className="relative rounded-3xl border border-white/25 bg-white/5 backdrop-blur-sm p-4 sm:p-6 shadow-2xl transition-transform duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+              <h2 className="text-3xl font-bold text-center mb-2 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                Meet Our Team Members
+              </h2>
+              <div className="perspective-[1200px]" style={{ transformStyle: 'preserve-3d' }}>
+                <div className="relative h-[600px] sm:h-[650px]">
+                  {/* 3D Background Elements */}
+                  <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-blue-500/5 blur-xl"
+                    style={{
+                      transform: 'translateZ(-50px)',
+                      animation: 'float 15s ease-in-out infinite',
+                    }}
+                  ></div>
+                  <div className="absolute bottom-10 right-10 w-20 h-20 rounded-full bg-purple-500/5 blur-xl"
+                    style={{
+                      transform: 'translateZ(-50px)',
+                      animation: 'float 20s ease-in-out infinite reverse',
+                    }}
+                  ></div>
+                  <div className="flex justify-center items-center h-full w-full">
+                    <TeamCarousel members={members} />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
