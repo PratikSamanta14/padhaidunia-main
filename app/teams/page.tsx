@@ -168,7 +168,7 @@ export default function Teams() {
               <span className="transition-colors duration-300 group-hover:text-cyan-400">About Us</span>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/#courses" className="relative group">
+            <Link href="/Courses" className="relative group">
               <span className="transition-colors duration-300 group-hover:text-cyan-400">Courses</span>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
@@ -204,7 +204,7 @@ export default function Teams() {
             <Link href="/AboutUs" className="text-gray-300 font-medium hover:text-cyan-400 transition-colors" onClick={() => setIsOpen(false)}>
               About Us
             </Link>
-            <Link href="/#courses" className="text-gray-300 font-medium hover:text-cyan-400 transition-colors" onClick={() => setIsOpen(false)}>
+            <Link href="/Courses" className="text-gray-300 font-medium hover:text-cyan-400 transition-colors" onClick={() => setIsOpen(false)}>
               Courses
             </Link>
             <Link href="/teams" className="text-cyan-400 font-medium transition-colors" onClick={() => setIsOpen(false)}>

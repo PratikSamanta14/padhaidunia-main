@@ -26,7 +26,7 @@ export default function AboutUsPage(): React.ReactElement {
 					<div className="hidden md:flex items-center gap-8">
 						<Link href="/" className="text-foreground hover:text-primary transition-colors">Home</Link>
 						<Link href="/AboutUs" className="text-foreground hover:text-primary transition-colors">About Us</Link>
-						<Link href="#courses" className="text-foreground hover:text-primary transition-colors">Courses</Link>
+						<Link href="/Courses" className="text-foreground hover:text-primary transition-colors">Courses</Link>
 						<Link href="/teams" className="text-foreground hover:text-primary transition-colors">Team</Link>
 						<Link href="/contact" className="text-foreground hover:text-primary transition-colors">Contact Us</Link>
 					</div>

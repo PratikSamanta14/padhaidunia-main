@@ -16,6 +16,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
+    "/Courses/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/Courses/page.js"
+    ],
+    "/AboutUs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/AboutUs/page.js"
+    ],
     "/teams/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -25,16 +35,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
-    ],
-    "/AboutUs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/AboutUs/page.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
     ]
   }
 }

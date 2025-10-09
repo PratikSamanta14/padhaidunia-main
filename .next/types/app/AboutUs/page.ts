@@ -1,4 +1,4 @@
-// File: D:\pDunia\padhaidunia-main\app\AboutUs\page.tsx
+// File: C:\Users\ARUN KUMAR MANDAL\OneDrive\Desktop\final_padhai_duniya\padhaidunia-main\app\AboutUs\page.tsx
 import * as entry from '../../../../app/AboutUs/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
